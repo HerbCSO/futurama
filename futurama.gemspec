@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Carsten Dreesbach"]
   spec.email         = ["carsten.dreesbach@oracle.com"]
 
-  spec.summary       = %q{A simplistics implementation of Futures, based on https://www.sitepoint.com/learn-concurrency-by-implementing-futures-in-ruby/.}
+  spec.summary       = %q{A simplistic implementation of Futures, based on https://www.sitepoint.com/learn-concurrency-by-implementing-futures-in-ruby/.}
   spec.description   = %q{Yeah, really nothing more to say here...}
   spec.homepage      = "https://github.com/herbcso/futurama"
   spec.license       = "MIT"
@@ -19,8 +19,7 @@ Gem::Specification.new do |spec|
   if spec.respond_to?(:metadata)
     spec.metadata['allowed_push_host'] = "https://gemserver.va.opower.it"
   else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
+    raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
   end
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
@@ -33,4 +32,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.14"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "rubocop", '~> 0.40.0'
+  spec.add_development_dependency "pry", '~> 0.10.4'
 end
