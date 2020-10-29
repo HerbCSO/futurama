@@ -33,5 +33,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", ">= 12.3.3", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "rubocop", '~> 0.49.0'
-  spec.add_development_dependency "pry", '~> 0.10.4'
+  spec.add_development_dependency "pry", '~> 0.13.1'
 end
